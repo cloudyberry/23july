@@ -3,7 +3,7 @@
 	<!-- Review Form-->
 
 	<div id="reviewForm-wrap">
-		<center>
+		<left>
 			<form class="review-post">
 
 				<h2 class="reviewForm-heading">Post Review</h2>
@@ -12,10 +12,24 @@
 
 				<div class = "wrap">
 				<h6 class="hideName">Hide Name?</h6>
-            <select class="form-control" id="hideName" name="hideName">
+
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="hideName" id="hideName" value="Yes" checked>
+				  <label class="form-check-label" for="exampleRadios1">
+				    Yes
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="hideName" id="hideName" value="No">
+				  <label class="form-check-label" for="exampleRadios2">
+				   No
+				  </label>
+				</div>
+
+            <!-- <select class="form-control" id="hideName" name="hideName">
               <option>Yes</option>
               <option>No</option>
-            </select>
+            </select> -->
 							<span class="input"></span>
 					</div>
 
@@ -150,7 +164,7 @@
 
 
 		</form>
-		</center>
+	</left>
 	</div>
 	<!-- End Review Form-->
 	{{else}}
